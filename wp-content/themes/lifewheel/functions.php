@@ -14,5 +14,9 @@ function load_style_script () {
  **/
 add_action('wp_enqueue_scripts', 'load_style_script');
 
+wp_enqueue_script('underscore' , get_template_directory_uri() . '/js/underscore.js');
+wp_enqueue_script('backbone' , get_template_directory_uri() . '/js/backbone.js');
+wp_enqueue_script('wp-api' , get_template_directory_uri() . '/js/wp-api.js');
+
 
 ?>
